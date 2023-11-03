@@ -1,12 +1,17 @@
 <div>
-  <h3>Dungeons and Dragons 5th Edition Spells</h3>
-  <p>Filter by school:</p>
-  <select [(ngModel)]="selectedSchool" (change)="onSchoolChange()">
-    <option *ngFor="let school of schools" [value]="school">{{ school }}</option>
-  </select>
+    <h3>Dungeons and Dragons 5th Edition Spells</h3>
+    <p>Filter by school:</p>
+    <select [(ngModel)]="selectedSchool" (change)="onSchoolChange()">
+        <option *ngFor="let school of schools" [value]="school">{{ school }}</option>
+    </select>
 </div>
 
-<div *ngFor="let spell of spells">
-  <p>{{ spell.name }}</p>
-  <p>{{ spell.desc }}</p>
+<div *ngFor="let letter of alphabet">
+    <details>
+        <summary>{{ letter }}</summary>
+        <div *ngFor="let spell of spells">
+            <p *ngIf="spell.name.startsWith(letter)">{{ spell.name }}</p>
+            <p *ngIf="spell.name.startsWith(letter)">{{ spell.desc }}</p>
+        </div>
+    </details>
 </div>

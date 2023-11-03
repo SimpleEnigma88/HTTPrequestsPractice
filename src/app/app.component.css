@@ -1,29 +1,37 @@
 body {
-  font-family: Arial, sans-serif;
-  font-size: medium;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    /* Dark background */
 }
 
 h2 {
-  color: #333;
+    color: #f4b042;
+    /* Gold for headers */
 }
 
 p {
-  color: #666;
+    color: #c5c6c7;
+    /* Light grey for text */
 }
 
 select {
-  width: 200px;
-  height: 30px;
-  margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #2b2b2b;
+    /* Dark grey for inputs */
+    color: #c5c6c7;
+    /* Light grey for input text */
 }
 
 div {
-  background-color: #fff;
-  margin: 5px;
-  padding: 3px;
-  border-radius: 2.5px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #2b2b2b;
+    /* Dark grey for divs */
+    margin: 5px;
+    padding: 3px;
+    border-radius: 2.5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }

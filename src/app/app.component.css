@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+div {
+  background-color: #fff;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 2.5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
